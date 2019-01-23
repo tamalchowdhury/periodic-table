@@ -7,7 +7,7 @@ export default class Element extends Component {
   };
 
   openInfo = (event) => {
-    console.log('Clicked!');
+    this.props.showInfo(this.props.num);
   };
 
   onMouseEnter = (event) => {
@@ -23,6 +23,7 @@ export default class Element extends Component {
     let element = elements[num];
     return (
       <div
+        title={element.name}
         onMouseEnter={this.onMouseEnter}
         onMouseLeave={this.onMouseLeave}
         onClick={this.openInfo}

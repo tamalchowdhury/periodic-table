@@ -37,20 +37,27 @@ body {
 
 .number {
   float: left;
-  font-size: 10px;
+  font-size: 0.5vw;
   position: absolute;
 }
 
 .symbol {
   font-weight: bold;
   text-align: center;
-  /* margin-top: 6px; */
+  margin-top: 0.5vw;
   font-size: 2.5vw;
 }
 
 .element-name {
   font-size: 0.8vw;
   text-align: center;
+}
+
+/* Information Table  */
+#information {
+  grid-column: 3/13;
+  grid-row: 2/4;
+  padding: 10px;
 }
 
 /* Helium to the top right  */

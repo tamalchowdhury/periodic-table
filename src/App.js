@@ -1,134 +1,156 @@
 import React, { Component } from 'react';
+import { elements } from './components/_data';
 import Element from './Element';
-import logo from './logo.svg';
 import './components/styles/main.css';
 
 class App extends Component {
+  state = {
+    showInfo: false,
+    element: {}
+  };
+
+  showInfo = (num) => {
+    this.setState({ showInfo: true, element: elements[num] });
+  };
+
   render() {
+    let { name, summary } = this.state.element;
+
     return (
       <div id="table">
-        <Element num="1" />
-        <Element num="2" />
-        <Element num="3" />
-        <Element num="4" />
-        <Element num="5" />
-        <Element num="6" />
-        <Element num="7" />
-        <Element num="8" />
-        <Element num="9" />
-        <Element num="10" />
-        <Element num="11" />
-        <Element num="12" />
-        <Element num="13" />
-        <Element num="14" />
-        <Element num="15" />
-        <Element num="16" />
-        <Element num="17" />
-        <Element num="18" />
-        <Element num="19" />
-        <Element num="20" />
-        <Element num="21" />
-        <Element num="22" />
-        <Element num="23" />
-        <Element num="24" />
-        <Element num="25" />
-        <Element num="26" />
-        <Element num="27" />
-        <Element num="28" />
-        <Element num="29" />
-        <Element num="30" />
-        <Element num="31" />
-        <Element num="32" />
-        <Element num="33" />
-        <Element num="34" />
-        <Element num="35" />
-        <Element num="36" />
-        <Element num="37" />
-        <Element num="38" />
-        <Element num="39" />
-        <Element num="40" />
-        <Element num="41" />
-        <Element num="42" />
-        <Element num="43" />
-        <Element num="44" />
-        <Element num="45" />
-        <Element num="46" />
-        <Element num="47" />
-        <Element num="48" />
-        <Element num="49" />
-        <Element num="50" />
-        <Element num="51" />
-        <Element num="52" />
-        <Element num="53" />
-        <Element num="54" />
-        <Element num="55" />
-        <Element num="56" />
+        <Element showInfo={this.showInfo} showInfo={this.showInfo} num="1" />
+        <Element showInfo={this.showInfo} num="2" />
+        <Element showInfo={this.showInfo} num="3" />
+        <Element showInfo={this.showInfo} num="4" />
+        {/* Information Table */}
+        <div id="information">
+          {this.state.showInfo ? (
+            <div>
+              <div>{name}</div>
+              <div>{summary}</div>
+            </div>
+          ) : (
+            ''
+          )}
+        </div>
+        <Element showInfo={this.showInfo} num="5" />
+        <Element showInfo={this.showInfo} num="6" />
+        <Element showInfo={this.showInfo} num="7" />
+        <Element showInfo={this.showInfo} num="8" />
+        <Element showInfo={this.showInfo} num="9" />
+        <Element showInfo={this.showInfo} num="10" />
+        <Element showInfo={this.showInfo} num="11" />
+        <Element showInfo={this.showInfo} num="12" />
+        <Element showInfo={this.showInfo} num="13" />
+        <Element showInfo={this.showInfo} num="14" />
+        <Element showInfo={this.showInfo} num="15" />
+        <Element showInfo={this.showInfo} num="16" />
+        <Element showInfo={this.showInfo} num="17" />
+        <Element showInfo={this.showInfo} num="18" />
+        <Element showInfo={this.showInfo} num="19" />
+        <Element showInfo={this.showInfo} num="20" />
+        <Element showInfo={this.showInfo} num="21" />
+        <Element showInfo={this.showInfo} num="22" />
+        <Element showInfo={this.showInfo} num="23" />
+        <Element showInfo={this.showInfo} num="24" />
+        <Element showInfo={this.showInfo} num="25" />
+        <Element showInfo={this.showInfo} num="26" />
+        <Element showInfo={this.showInfo} num="27" />
+        <Element showInfo={this.showInfo} num="28" />
+        <Element showInfo={this.showInfo} num="29" />
+        <Element showInfo={this.showInfo} num="30" />
+        <Element showInfo={this.showInfo} num="31" />
+        <Element showInfo={this.showInfo} num="32" />
+        <Element showInfo={this.showInfo} num="33" />
+        <Element showInfo={this.showInfo} num="34" />
+        <Element showInfo={this.showInfo} num="35" />
+        <Element showInfo={this.showInfo} num="36" />
+        <Element showInfo={this.showInfo} num="37" />
+        <Element showInfo={this.showInfo} num="38" />
+        <Element showInfo={this.showInfo} num="39" />
+        <Element showInfo={this.showInfo} num="40" />
+        <Element showInfo={this.showInfo} num="41" />
+        <Element showInfo={this.showInfo} num="42" />
+        <Element showInfo={this.showInfo} num="43" />
+        <Element showInfo={this.showInfo} num="44" />
+        <Element showInfo={this.showInfo} num="45" />
+        <Element showInfo={this.showInfo} num="46" />
+        <Element showInfo={this.showInfo} num="47" />
+        <Element showInfo={this.showInfo} num="48" />
+        <Element showInfo={this.showInfo} num="49" />
+        <Element showInfo={this.showInfo} num="50" />
+        <Element showInfo={this.showInfo} num="51" />
+        <Element showInfo={this.showInfo} num="52" />
+        <Element showInfo={this.showInfo} num="53" />
+        <Element showInfo={this.showInfo} num="54" />
+        <Element showInfo={this.showInfo} num="55" />
+        <Element showInfo={this.showInfo} num="56" />
         {/* Lanthanoids split */}
-        <Element num="72" />
-        <Element num="73" />
-        <Element num="74" />
-        <Element num="75" />
-        <Element num="76" />
-        <Element num="77" />
-        <Element num="78" />
-        <Element num="79" />
-        <Element num="80" />
-        <Element num="81" />
-        <Element num="82" />
-        <Element num="83" />
-        <Element num="84" />
-        <Element num="85" />
-        <Element num="86" />
-        <Element num="87" />
-        <Element num="88" />
+        <Element showInfo={this.showInfo} num="72" />
+        <Element showInfo={this.showInfo} num="73" />
+        <Element showInfo={this.showInfo} num="74" />
+        <Element showInfo={this.showInfo} num="75" />
+        <Element showInfo={this.showInfo} num="76" />
+        <Element showInfo={this.showInfo} num="77" />
+        <Element showInfo={this.showInfo} num="78" />
+        <Element showInfo={this.showInfo} num="79" />
+        <Element showInfo={this.showInfo} num="80" />
+        <Element showInfo={this.showInfo} num="81" />
+        <Element showInfo={this.showInfo} num="82" />
+        <Element showInfo={this.showInfo} num="83" />
+        <Element showInfo={this.showInfo} num="84" />
+        <Element showInfo={this.showInfo} num="85" />
+        <Element showInfo={this.showInfo} num="86" />
+        <Element showInfo={this.showInfo} num="87" />
+        <Element showInfo={this.showInfo} num="88" />
         {/* Actinoids split */}
-        <Element num="104" />
-        <Element num="105" />
-        <Element num="106" />
-        <Element num="107" />
-        <Element num="108" />
-        <Element num="109" />
-        <Element num="110" />
-        <Element num="111" />
-        <Element num="112" />
-        <Element num="113" />
-        <Element num="114" />
-        <Element num="115" />
-        <Element num="116" />
-        <Element num="117" />
-        <Element num="118" />
+        <Element showInfo={this.showInfo} num="104" />
+        <Element showInfo={this.showInfo} num="105" />
+        <Element showInfo={this.showInfo} num="106" />
+        <Element showInfo={this.showInfo} num="107" />
+        <Element showInfo={this.showInfo} num="108" />
+        <Element showInfo={this.showInfo} num="109" />
+        <Element showInfo={this.showInfo} num="110" />
+        <Element showInfo={this.showInfo} num="111" />
+        <Element showInfo={this.showInfo} num="112" />
+        <Element showInfo={this.showInfo} num="113" />
+        <Element showInfo={this.showInfo} num="114" />
+        <Element showInfo={this.showInfo} num="115" />
+        <Element showInfo={this.showInfo} num="116" />
+        <Element showInfo={this.showInfo} num="117" />
+        <Element showInfo={this.showInfo} num="118" />
         {/* Lanthenoids */}
-        <Element num="57" />
-        <Element num="58" />
-        <Element num="59" />
-        <Element num="60" />
-        <Element num="61" />
-        <Element num="62" />
-        <Element num="63" />
-        <Element num="64" />
-        <Element num="65" />
-        <Element num="66" />
-        <Element num="67" />
-        <Element num="68" />
-        <Element num="69" />
-        <Element num="70" />
-        <Element num="71" />
+        <Element showInfo={this.showInfo} num="57" />
+        <Element showInfo={this.showInfo} num="58" />
+        <Element showInfo={this.showInfo} num="59" />
+        <Element showInfo={this.showInfo} num="60" />
+        <Element showInfo={this.showInfo} num="61" />
+        <Element showInfo={this.showInfo} num="62" />
+        <Element showInfo={this.showInfo} num="63" />
+        <Element showInfo={this.showInfo} num="64" />
+        <Element showInfo={this.showInfo} num="65" />
+        <Element showInfo={this.showInfo} num="66" />
+        <Element showInfo={this.showInfo} num="67" />
+        <Element showInfo={this.showInfo} num="68" />
+        <Element showInfo={this.showInfo} num="69" />
+        <Element showInfo={this.showInfo} num="70" />
+        <Element showInfo={this.showInfo} num="71" />
         {/* Actionoids */}
-        <Element num="89" />
-        <Element num="90" />
-        <Element num="91" />
-        <Element num="92" />
-        <Element num="93" />
-        <Element num="94" />
-        <Element num="95" />
-        <Element num="96" />
-        <Element num="97" />
-        <Element num="98" />
-        <Element num="99" />
-        <Element num="100" />
-        <Element num="101" />
-        <Element num="102" />
-        <Element num="103" />
+        <Element showInfo={this.showInfo} num="89" />
+        <Element showInfo={this.showInfo} num="90" />
+        <Element showInfo={this.showInfo} num="91" />
+        <Element showInfo={this.showInfo} num="92" />
+        <Element showInfo={this.showInfo} num="93" />
+        <Element showInfo={this.showInfo} num="94" />
+        <Element showInfo={this.showInfo} num="95" />
+        <Element showInfo={this.showInfo} num="96" />
+        <Element showInfo={this.showInfo} num="97" />
+        <Element showInfo={this.showInfo} num="98" />
+        <Element showInfo={this.showInfo} num="99" />
+        <Element showInfo={this.showInfo} num="100" />
+        <Element showInfo={this.showInfo} num="101" />
+        <Element showInfo={this.showInfo} num="102" />
+        <Element showInfo={this.showInfo} num="103" />
       </div>
     );
   }
