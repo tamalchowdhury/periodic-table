@@ -123,16 +123,14 @@ body {
   grid-column-start: 13;
 }
 
-/* Lanthinide & Actinoid split  */
+/* Not needed anymore since I decided to fill them with first elements */
+
 /* .element-72,
 .element-104 {
   grid-column-start: 4;
 } */
 
-.lathenides {
-  margin-top: 55px;
-}
-
+/* Lanthinide & Actinoid split  */
 .element-58,
 .element-90 {
   grid-column-start: 3;
@@ -183,16 +181,18 @@ body {
 /* Lanthanide  */
 .lanthanide {
   background: #cc99ff;
+  /* Put a space to seperate the split table  */
   margin-top: 2.5vw;
-}
-
-.element-57 {
-  margin: 0;
 }
 
 /* Actinide  */
 .actinide {
   background: #ad87bd;
+}
+
+/* Disable the top space for the first lathenide which sits inside the table  */
+.element-57 {
+  margin: 0;
 }
 
 /* When in the hover state  */
