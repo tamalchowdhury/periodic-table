@@ -2,6 +2,10 @@
 
 Made with CSS Grid, React and Science!
 
+(See it in Action!)[https://tamalanwar.github.io/periodic-table/]
+
+![Periodic Table](https://raw.githubusercontent.com/TamalAnwar/periodic-table/master/periodic_table_react1.png)
+
 ## How it was made?
 
 I made the layout using CSS grid. The table is a bunch of boxes in 18 columns, arranged in a funny way.
