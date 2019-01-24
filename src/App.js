@@ -199,7 +199,16 @@ class App extends Component {
           <Element showInfo={this.showInfo} num="103" />
         </div>
         <p className="center">
-          Put together by <a href="https://tamalweb.com">Tamal Anwar</a>
+          Put together by{' '}
+          <a href="https://tamalweb.com" target="_blank">
+            Tamal Anwar
+          </a>{' '}
+          /{' '}
+          <a
+            href="https://github.com/TamalAnwar/periodic-table"
+            target="_blank">
+            Github
+          </a>
         </p>
       </div>
     );
