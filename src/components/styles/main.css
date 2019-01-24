@@ -10,12 +10,15 @@ body {
   color: #333333;
 }
 
-#table {
-  display: grid;
-  grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto 1fr;
+.wrapper {
   width: 90%;
   margin: 0 auto;
   max-width: 100%;
+}
+
+#table {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto 1fr;
 }
 
 /* Temporarily hide these for now */
@@ -53,11 +56,27 @@ body {
   text-align: center;
 }
 
+#element-box {
+  grid-column: 3/5;
+  grid-row: 2/4;
+  margin: 0;
+  border-top: 2px solid #cccccc;
+  border-right: 2px solid #cccccc;
+  border-left: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+}
+
 /* Information Table  */
 #information {
-  grid-column: 3/13;
+  grid-column: 5/13;
   grid-row: 2/4;
-  padding: 10px;
+  padding: 0.5vw;
+  padding-top: 0;
+  font-size: 1vw;
+}
+
+#information h1 {
+  margin: 0 0 0.5vw 0;
 }
 
 /* Helium to the top right  */
@@ -72,17 +91,17 @@ body {
 }
 
 /* Lanthinide & Actinoid split  */
-.element-72,
+/* .element-72,
 .element-104 {
   grid-column-start: 4;
-}
+} */
 
 .lathenides {
   margin-top: 55px;
 }
 
-.element-57,
-.element-89 {
+.element-58,
+.element-90 {
   grid-column-start: 3;
 }
 
@@ -131,6 +150,11 @@ body {
 /* Lanthanide  */
 .lanthanide {
   background: #8a54a2;
+  margin-top: 2.5vw;
+}
+
+.element-57 {
+  margin: 0;
 }
 
 /* Actinide  */
