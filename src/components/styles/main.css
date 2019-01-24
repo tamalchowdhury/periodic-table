@@ -10,6 +10,10 @@ body {
   color: #333333;
 }
 
+.center {
+  text-align: center;
+}
+
 .wrapper {
   width: 90%;
   margin: 0 auto;
@@ -33,7 +37,7 @@ body {
   height: 5vw;
 
   padding: 2px;
-  border: 1px solid #cccccc;
+  border: 1px solid #333333;
   border-collapse: collapse;
   overflow: hidden;
 }
@@ -56,14 +60,28 @@ body {
   text-align: center;
 }
 
+#element-box .symbol {
+  font-size: 5vw;
+}
+
+#element-box .number {
+  font-size: 1vw;
+}
+
+#element-box .element-name {
+  font-size: 1.5vw;
+}
+
 #element-box {
   grid-column: 3/5;
   grid-row: 2/4;
   margin: 0;
-  border-top: 2px solid #cccccc;
+  padding: 0.2vw;
+  overflow: hidden;
+  /* border-top: 2px solid #cccccc;
   border-right: 2px solid #cccccc;
   border-left: 1px solid #cccccc;
-  border-bottom: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc; */
 }
 
 /* Information Table  */
@@ -77,6 +95,21 @@ body {
 
 #information h1 {
   margin: 0 0 0.5vw 0;
+}
+
+.close-button {
+  float: right;
+  cursor: pointer;
+  color: #cccccc;
+}
+
+.close-button:hover {
+  color: #333333;
+}
+
+.appearance {
+  font-style: italic;
+  margin-bottom: 0.5vw;
 }
 
 /* Helium to the top right  */
@@ -109,7 +142,7 @@ body {
 
 /* Noble Gas  */
 .noble {
-  background: #d5a3d2;
+  background: #f3d2e8;
 }
 
 /* Alkali Metal  */
@@ -124,7 +157,7 @@ body {
 
 /* Transition Metal  */
 .transition {
-  background: #f4f714;
+  background: #e9ff08;
 }
 
 /* Polyatomic Non Metal  */
@@ -149,7 +182,7 @@ body {
 
 /* Lanthanide  */
 .lanthanide {
-  background: #8a54a2;
+  background: #cc99ff;
   margin-top: 2.5vw;
 }
 
@@ -162,7 +195,8 @@ body {
   background: #ad87bd;
 }
 
+/* When in the hover state  */
 .active {
   background: #fff;
-  border-color: yellow;
+  /* border-color: yellow; */
 }

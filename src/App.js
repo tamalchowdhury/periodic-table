@@ -1,7 +1,9 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import { elements } from './components/_data';
 import Element from './Element';
 import './components/styles/main.css';
+
+document.title = 'The Periodic Table of Elements';
 
 class App extends Component {
   state = {
@@ -13,8 +15,20 @@ class App extends Component {
     this.setState({ showInfo: true, element: elements[num] });
   };
 
+  closeInfo = () => {
+    this.setState({ showInfo: false });
+  };
+
   render() {
-    let { name, summary, symbol, category } = this.state.element;
+    let {
+      name,
+      summary,
+      symbol,
+      category,
+      number,
+      source,
+      appearance
+    } = this.state.element;
 
     return (
       <div className="wrapper">
@@ -25,19 +39,45 @@ class App extends Component {
           <Element showInfo={this.showInfo} num="3" />
           <Element showInfo={this.showInfo} num="4" />
           {/* Information Table */}
-          <div id="element-box" className={`${category}`}>
-            {symbol}
-          </div>
-          <div id="information">
-            {this.state.showInfo ? (
-              <div>
-                <h1>{name}</h1>
-                <div>{summary}</div>
+          {this.state.showInfo ? (
+            <Fragment>
+              <div id="element-box" className={`${category}`}>
+                <div className="number">{number}</div>
+                <div className="symbol">{symbol}</div>
+                <div className="element-name">{name}</div>
               </div>
-            ) : (
-              ''
-            )}
-          </div>
+              <div id="information">
+                <div
+                  onClick={this.closeInfo}
+                  className="close-button"
+                  title="Close Info">
+                  Close [&times;]
+                </div>
+                <div>
+                  <h1>{name}</h1>
+                  {appearance ? (
+                    <div className="appearance">
+                      <strong>Appearance:</strong> {appearance}
+                    </div>
+                  ) : (
+                    ''
+                  )}
+                  <div>
+                    {summary
+                      .split(' ')
+                      .slice(0, 45)
+                      .join(' ')}
+                    ...
+                    <a target="_blank" href={source}>
+                      Source
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </Fragment>
+          ) : (
+            ''
+          )}
           <Element showInfo={this.showInfo} num="5" />
           <Element showInfo={this.showInfo} num="6" />
           <Element showInfo={this.showInfo} num="7" />
@@ -158,7 +198,9 @@ class App extends Component {
           <Element showInfo={this.showInfo} num="102" />
           <Element showInfo={this.showInfo} num="103" />
         </div>
-        <p>Put together by Tamal Anwar</p>
+        <p className="center">
+          Put together by <a href="https://tamalweb.com">Tamal Anwar</a>
+        </p>
       </div>
     );
   }
