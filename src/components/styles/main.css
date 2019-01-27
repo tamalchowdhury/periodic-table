@@ -78,10 +78,6 @@ body {
   margin: 0;
   padding: 0.2vw;
   overflow: hidden;
-  /* border-top: 2px solid #cccccc;
-  border-right: 2px solid #cccccc;
-  border-left: 1px solid #cccccc;
-  border-bottom: 1px solid #cccccc; */
 }
 
 /* Information Table  */
@@ -123,13 +119,6 @@ body {
 .element-13 {
   grid-column-start: 13;
 }
-
-/* Not needed anymore since I decided to fill them with first elements */
-
-/* .element-72,
-.element-104 {
-  grid-column-start: 4;
-} */
 
 /* Lanthinide & Actinoid split  */
 .element-58,
