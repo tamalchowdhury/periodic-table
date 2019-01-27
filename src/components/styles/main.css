@@ -17,7 +17,7 @@ body {
 .wrapper {
   width: 90%;
   margin: 0 auto;
-  max-width: 100%;
+  max-width: 1700px;
 }
 
 #table {
@@ -91,6 +91,7 @@ body {
   padding: 0.5vw;
   padding-top: 0;
   font-size: 1vw;
+  max-height: 10vw;
 }
 
 #information h1 {
