@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "/periodic-table/static/js/runtime~main.8e10912f.js"
   },
   {
-    "revision": "59dbf6796de623b409b7",
-    "url": "/periodic-table/static/js/main.59dbf679.chunk.js"
+    "revision": "f8d24fcdd3b7a8b63758",
+    "url": "/periodic-table/static/js/main.f8d24fcd.chunk.js"
   },
   {
     "revision": "ec5d15567dc43003ccaa",
     "url": "/periodic-table/static/js/1.ec5d1556.chunk.js"
   },
   {
-    "revision": "59dbf6796de623b409b7",
-    "url": "/periodic-table/static/css/main.251a8e3b.chunk.css"
+    "revision": "f8d24fcdd3b7a8b63758",
+    "url": "/periodic-table/static/css/main.d1d47883.chunk.css"
   },
   {
-    "revision": "0424806448a43c451a370e70237e77a4",
+    "revision": "e15c4f8a8efd9025ed5ce11e0cb68a01",
     "url": "/periodic-table/index.html"
   }
 ];
