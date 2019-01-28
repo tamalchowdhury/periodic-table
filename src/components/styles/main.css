@@ -83,10 +83,23 @@ body {
   padding-top: 0;
   font-size: 1vw;
   max-height: 10vw;
+  overflow: scroll;
 }
 
 #information h1 {
   margin: 0 0 0.5vw 0;
+}
+
+.big_title {
+  display: inline-block;
+}
+
+.cat_name {
+  border-radius: 3px;
+  padding: 0 5px;
+  margin-left: 5px;
+  top: -0.7vw;
+  position: relative;
 }
 
 .close-button {
@@ -100,8 +113,12 @@ body {
 }
 
 .appearance {
-  font-style: italic;
   margin-bottom: 0.5vw;
+}
+
+.atom_info {
+  margin-bottom: 0.5vw;
+  color: #998100;
 }
 
 /* Helium to the top right  */
@@ -119,6 +136,12 @@ body {
 .element-58,
 .element-90 {
   grid-column-start: 3;
+}
+
+/* I DID NOT KNOW THERE WAS 119th ONE! */
+
+.element-119 {
+  grid-column-start: -2;
 }
 
 /* Categories and Groups */
@@ -167,12 +190,17 @@ body {
 .lanthanide {
   background: #cc99ff;
   /* Put a space to seperate the split table  */
-  margin-top: 2.5vw;
+  /* margin-top: 2.5vw; */
 }
 
 /* Actinide  */
 .actinide {
   background: #ad87bd;
+}
+
+/* The Unknown Element  */
+.unknown {
+  background: #ccffff;
 }
 
 /* Disable the top space for the first lathenide which sits inside the table  */

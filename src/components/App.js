@@ -26,12 +26,33 @@ class App extends Component {
       category,
       number,
       source,
-      appearance
+      appearance,
+      atomic_mass,
+      molar_heat,
+      density,
+      melt,
+      boil
     } = this.state.element;
 
     return (
       <div className="wrapper">
         <h1>The Periodic Table of Elements</h1>
+        <p className="">
+          Put together by{' '}
+          <a href="https://tamalweb.com" target="_blank">
+            Tamal Anwar
+          </a>{' '}
+          /{' '}
+          <a
+            href="https://github.com/TamalAnwar/periodic-table"
+            target="_blank">
+            Source Code
+          </a>
+          /{' '}
+          <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//tamalanwar.github.io/periodic-table/">
+            Share on Facebook
+          </a>
+        </p>
         <div id="table">
           <Element showInfo={this.showInfo} num="1" />
           <Element showInfo={this.showInfo} num="2" />
@@ -53,7 +74,8 @@ class App extends Component {
                   Close [&times;]
                 </div>
                 <div>
-                  <h1>{name}</h1>
+                  <h1 className="big_title">{name}</h1>
+                  <span className={`cat_name ${category}`}>{category}</span>
                   {appearance ? (
                     <div className="appearance">
                       <strong>Appearance:</strong> {appearance}
@@ -61,12 +83,15 @@ class App extends Component {
                   ) : (
                     ''
                   )}
+                  <div className="atom_info">
+                    <span>Atomic Mass: {atomic_mass} | </span>
+                    <span>Density: {density}</span>
+                    {molar_heat ? <span> | Molar Heat: {molar_heat}</span> : ''}
+                    {melt ? <span> | Melt: {melt}K</span> : ''}
+                    {boil ? <span> | Boil: {boil}K</span> : ''}
+                  </div>
                   <div>
-                    {summary
-                      .split(' ')
-                      .slice(0, 45)
-                      .join(' ')}
-                    ...
+                    {summary} ...{' '}
                     <a target="_blank" href={source}>
                       Source
                     </a>
@@ -166,6 +191,7 @@ class App extends Component {
           <Element showInfo={this.showInfo} num="116" />
           <Element showInfo={this.showInfo} num="117" />
           <Element showInfo={this.showInfo} num="118" />
+          <Element showInfo={this.showInfo} num="119" />
           {/* Lanthenoids */}
           <Element showInfo={this.showInfo} num="58" />
           <Element showInfo={this.showInfo} num="59" />
@@ -197,18 +223,7 @@ class App extends Component {
           <Element showInfo={this.showInfo} num="102" />
           <Element showInfo={this.showInfo} num="103" />
         </div>
-        <p className="center">
-          Put together by{' '}
-          <a href="https://tamalweb.com" target="_blank">
-            Tamal Anwar
-          </a>{' '}
-          /{' '}
-          <a
-            href="https://github.com/TamalAnwar/periodic-table"
-            target="_blank">
-            Github
-          </a>
-        </p>
+        <p className="center">2018</p>
       </div>
     );
   }
