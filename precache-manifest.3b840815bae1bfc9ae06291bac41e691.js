@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/periodic-table/static/css/main.d1d47883.chunk.css"
   },
   {
-    "revision": "18a4085810707afc8f7f521b7a1a715f",
+    "revision": "a8da46995ca6afb310020a7b51593de5",
     "url": "/periodic-table/index.html"
   }
 ];
