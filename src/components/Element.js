@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { elements } from './components/_data';
+import { elements } from './_data';
 
 export default class Element extends Component {
   state = {

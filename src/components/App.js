@@ -1,7 +1,6 @@
 import React, { Component, Fragment } from 'react';
-import { elements } from './components/_data';
+import { elements } from './_data';
 import Element from './Element';
-import './components/styles/main.css';
 
 document.title = 'The Periodic Table of Elements';
 

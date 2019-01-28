@@ -22,12 +22,7 @@ body {
 
 #table {
   display: grid;
-  grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto 1fr;
-}
-
-/* Temporarily hide these for now */
-#table-extra {
-  display: none;
+  grid-template-columns: repeat(17, auto) 1fr;
 }
 
 /* Every element box  */
