@@ -4,6 +4,8 @@ Made with CSS Grid, React and Science!
 
 [See it in Action!](https://tamalanwar.github.io/periodic-table/)
 
+[Blog Post: How I made The Periodic Table with CSS Grid and React](https://levelup.gitconnected.com/how-i-made-the-periodic-table-with-css-grid-and-react-69f94d7fcec)
+
 ![Periodic Table](https://raw.githubusercontent.com/TamalAnwar/periodic-table/master/periodic_table_react1.png)
 
 ## How it was made?
