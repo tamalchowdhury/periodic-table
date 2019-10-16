@@ -83,7 +83,7 @@ body {
   padding-top: 0;
   font-size: 1vw;
   max-height: 10vw;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 #information h1 {
