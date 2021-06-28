@@ -1,13 +1,29 @@
-@import '_normalize.css';
+/*
+Copyright 2021 Tamal Anwar Chowdhury
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    https://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+*/
+
+@import "_normalize.css";
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  color: #333333;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #333;
 }
 
 .center {
@@ -32,7 +48,7 @@ body {
   height: 5vw;
 
   padding: 2px;
-  border: 1px solid #333333;
+  border: 1px solid #333;
   border-collapse: collapse;
   overflow: hidden;
 }
@@ -105,11 +121,11 @@ body {
 .close-button {
   float: right;
   cursor: pointer;
-  color: #cccccc;
+  color: #ccc;
 }
 
 .close-button:hover {
-  color: #333333;
+  color: #333;
 }
 
 .appearance {
@@ -188,7 +204,7 @@ body {
 
 /* Lanthanide  */
 .lanthanide {
-  background: #cc99ff;
+  background: #c9f;
   /* Put a space to seperate the split table  */
   /* margin-top: 2.5vw; */
 }
@@ -200,7 +216,7 @@ body {
 
 /* The Unknown Element  */
 .unknown {
-  background: #ccffff;
+  background: #cff;
 }
 
 /* Disable the top space for the first lathenide which sits inside the table  */

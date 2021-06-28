@@ -1,13 +1,29 @@
-import React, { Component, Fragment } from 'react';
-import { elements } from './_data';
-import Element from './Element';
+/*
+Copyright 2021 Tamal Anwar Chowdhury
 
-document.title = 'The Periodic Table of Elements';
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    https://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+*/
+
+import React, { Component, Fragment } from "react";
+import { elements } from "./_data";
+import Element from "./Element";
+
+document.title = "The Periodic Table of Elements";
 
 class App extends Component {
   state = {
     showInfo: false,
-    element: {}
+    element: {},
   };
 
   showInfo = (num) => {
@@ -31,28 +47,13 @@ class App extends Component {
       molar_heat,
       density,
       melt,
-      boil
+      boil,
     } = this.state.element;
 
     return (
       <div className="wrapper">
         <h1>The Periodic Table of Elements</h1>
-        <p className="">
-          Put together by{' '}
-          <a href="https://tamalweb.com" target="_blank">
-            Tamal Anwar
-          </a>{' '}
-          /{' '}
-          <a
-            href="https://github.com/TamalAnwar/periodic-table"
-            target="_blank">
-            Source Code
-          </a>
-          /{' '}
-          <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//tamalanwar.github.io/periodic-table/">
-            Share on Facebook
-          </a>
-        </p>
+
         <div id="table">
           <Element showInfo={this.showInfo} num="1" />
           <Element showInfo={this.showInfo} num="2" />
@@ -70,7 +71,8 @@ class App extends Component {
                 <div
                   onClick={this.closeInfo}
                   className="close-button"
-                  title="Close Info">
+                  title="Close Info"
+                >
                   Close [&times;]
                 </div>
                 <div>
@@ -81,17 +83,17 @@ class App extends Component {
                       <strong>Appearance:</strong> {appearance}
                     </div>
                   ) : (
-                    ''
+                    ""
                   )}
                   <div className="atom_info">
                     <span>Atomic Mass: {atomic_mass} | </span>
                     <span>Density: {density}</span>
-                    {molar_heat ? <span> | Molar Heat: {molar_heat}</span> : ''}
-                    {melt ? <span> | Melt: {melt}K</span> : ''}
-                    {boil ? <span> | Boil: {boil}K</span> : ''}
+                    {molar_heat ? <span> | Molar Heat: {molar_heat}</span> : ""}
+                    {melt ? <span> | Melt: {melt}K</span> : ""}
+                    {boil ? <span> | Boil: {boil}K</span> : ""}
                   </div>
                   <div>
-                    {summary} ...{' '}
+                    {summary} ...{" "}
                     <a target="_blank" href={source}>
                       Source
                     </a>
@@ -100,7 +102,7 @@ class App extends Component {
               </div>
             </Fragment>
           ) : (
-            ''
+            ""
           )}
           <Element showInfo={this.showInfo} num="5" />
           <Element showInfo={this.showInfo} num="6" />
@@ -223,7 +225,21 @@ class App extends Component {
           <Element showInfo={this.showInfo} num="102" />
           <Element showInfo={this.showInfo} num="103" />
         </div>
-        <p className="center">2018</p>
+        <p className="center">
+          <p className="">
+            2021, Put together by{" "}
+            <a href="https://tamalweb.com" target="_blank">
+              Tamal A. Chowdhury
+            </a>{" "}
+            /{" "}
+            <a
+              href="https://github.com/tamalweb/periodic-table"
+              target="_blank"
+            >
+              Source Code
+            </a>
+          </p>
+        </p>
       </div>
     );
   }
