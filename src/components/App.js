@@ -17,6 +17,7 @@ limitations under the License.
 import React, { Component, Fragment } from "react";
 import { elements } from "./_data";
 import Element from "./Element";
+import "../components/styles/elements.css";
 
 document.title = "The Periodic Table of Elements";
 
@@ -68,7 +69,7 @@ class App extends Component {
 
     return (
       <div className="wrapper">
-        <h1>Periodic Table Website</h1>
+        <h1 className="site-title">Periodic Table Website</h1>
         <div id="table">
           {/* Elements 1-4 */}
           {this.populateElements(1, 4)}
@@ -118,7 +119,7 @@ class App extends Component {
           {/* Lanthanoids split 72-89 */}
           {this.populateElements(72, 89)}
           {/* Actinoids split 104-119*/}
-          {this.populateElements(104, 119)}
+          {this.populateElements(104, 118)}
           {/* Lanthenoids 58-71*/}
           {this.populateElements(58, 71)}
           {/* Actionoids 90-103 */}
