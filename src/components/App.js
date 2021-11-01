@@ -68,7 +68,7 @@ class App extends Component {
 
     return (
       <div className="wrapper">
-        <h1>The Periodic Table of Elements</h1>
+        <h1>Periodic Table Website</h1>
         <div id="table">
           {/* Elements 1-4 */}
           {this.populateElements(1, 4)}
@@ -131,7 +131,7 @@ class App extends Component {
               href="https://tamalweb.com/periodic-table-reactjs"
               target="_blank"
             >
-              Tamal A. Chowdhury
+              Tamal Web
             </a>{" "}
             /{" "}
             <a

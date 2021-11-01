@@ -16,7 +16,13 @@ limitations under the License.
 
 @import "_normalize.css";
 
-* {
+html {
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -46,7 +52,6 @@ body {
   cursor: pointer;
   width: 5vw;
   height: 5vw;
-
   padding: 2px;
   border: 1px solid #333;
   border-collapse: collapse;
@@ -228,4 +233,10 @@ body {
 .active {
   background: #fff;
   /* border-color: yellow; */
+}
+
+@media (max-width: 800px) {
+  .element {
+    border: 0;
+  }
 }
