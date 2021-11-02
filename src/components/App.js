@@ -18,8 +18,7 @@ import React, { Component, Fragment } from "react";
 import { elements } from "./_data";
 import Element from "./Element";
 import "../components/styles/elements.css";
-
-document.title = "The Periodic Table of Elements";
+import GitHubButton from "react-github-btn";
 
 class App extends Component {
   state = {
@@ -69,7 +68,6 @@ class App extends Component {
 
     return (
       <div className="wrapper">
-        <h1 className="site-title">Periodic Table Website</h1>
         <div id="table">
           {/* Elements 1-4 */}
           {this.populateElements(1, 4)}
@@ -125,24 +123,26 @@ class App extends Component {
           {/* Actionoids 90-103 */}
           {this.populateElements(90, 103)}
         </div>
-        <p className="center">
-          <p className="">
+        <footer className="footer center">
+          <span>
             2021, Put together by{" "}
             <a
               href="https://tamalweb.com/periodic-table-reactjs"
               target="_blank"
+              rel="noopener noreferrer"
             >
               Tamal Web
-            </a>{" "}
-            /{" "}
-            <a
-              href="https://github.com/tamalweb/periodic-table"
-              target="_blank"
-            >
-              Source Code
             </a>
-          </p>
-        </p>
+          </span>
+          <GitHubButton
+            href="https://github.com/tamalweb/periodic-table"
+            data-color-scheme="no-preference: light; light: light; dark: dark;"
+            data-show-count="true"
+            aria-label="Star tamalweb/periodic-table on GitHub"
+          >
+            Star
+          </GitHubButton>
+        </footer>
       </div>
     );
   }

@@ -38,12 +38,13 @@ body {
 .wrapper {
   width: 90%;
   margin: 0 auto;
+  margin-top: 2vw;
   max-width: 1700px;
 }
 
 #table {
   display: grid;
-  grid-template-columns: repeat(18, 1fr);
+  grid-template-columns: repeat(17, auto) 1fr;
 }
 
 .site-title {
@@ -251,7 +252,14 @@ body {
   /* border-color: yellow; */
 }
 
-@media (max-width: 800px) {
+.footer {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+@media (max-width: 375px) {
   .wrapper {
     width: 100%;
   }
