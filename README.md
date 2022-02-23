@@ -2,7 +2,7 @@
 
 Made with CSS Grid, React and Science!
 
-[See it in Action!](httpss://periodictable.website)
+[See it in Action!](https://periodictable.website)
 
 [Blog Post: How I made The Periodic Table with CSS Grid and React](https://tamalweb.com/periodic-table-reactjs)
 
