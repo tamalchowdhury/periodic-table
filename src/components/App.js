@@ -129,7 +129,7 @@ class App extends Component {
             <a
               href="https://tamalweb.com/periodic-table-reactjs"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener"
             >
               Tamal Web
             </a>

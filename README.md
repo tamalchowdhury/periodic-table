@@ -2,11 +2,11 @@
 
 Made with CSS Grid, React and Science!
 
-[See it in Action!](https://tamalweb.github.io/periodic-table/)
+[See it in Action!](httpss://periodictable.website)
 
 [Blog Post: How I made The Periodic Table with CSS Grid and React](https://tamalweb.com/periodic-table-reactjs)
 
-![Periodic Table](https://raw.githubusercontent.com/tamalweb/periodic-table/master/screenshot.png)
+![Periodic Table](./screenshot.jpg)
 
 ## How it was made?
 

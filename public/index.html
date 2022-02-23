@@ -8,6 +8,10 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <meta name="theme-color" content="#fff" />
+    <meta
+      name="google-site-verification"
+      content="U4QcVjtNybNSuVPvM7eYY9iYHfTr6sqefG_dY_Y5Cfw"
+    />
     <!--
       manifest.json provides metadata used when your web app is added to the
       homescreen on Android. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -23,17 +27,31 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>Interactive Periodic Table of Elements</title>
-    <meta property="og:title" content="The Periodic Table of Elements" />
     <meta
-      property="og:description"
-      content="An interactive Periodic Table of Elements, Made with CSS Grid, React and Science!"
+      name="description"
+      content="An interactive Periodic Table of Elements, Learn each of the elements, good for classroom presentation"
+      <meta
+      property="og:title"
+      content="The Periodic Table of Elements"
     />
+
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://tamalweb.github.io/" />
-    <meta
-      property="og:image"
-      content="https://tamalweb.github.io/periodic-table/og.jpg"
-    />
+
+    <meta property="og:image" content="https://periodictable.website/og.jpg" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-LE29R04Y09"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag("js", new Date())
+
+      gtag("config", "G-LE29R04Y09")
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
