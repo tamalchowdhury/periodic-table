@@ -1,5 +1,5 @@
 /*
-Copyright 2021 Tamal Anwar Chowdhury
+Copyright 2022 Tamal Anwar Chowdhury
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -14,25 +14,25 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import React, { Component, Fragment } from "react";
-import { elements } from "./_data";
-import Element from "./Element";
-import "../components/styles/elements.css";
-import GitHubButton from "react-github-btn";
+import React, { Component, Fragment } from "react"
+import { elements } from "./_data"
+import Element from "./Element"
+import "../components/styles/elements.css"
+import GitHubButton from "react-github-btn"
 
 class App extends Component {
   state = {
     showInfo: false,
-    element: {},
-  };
+    element: {}
+  }
 
-  showInfo = (num) => {
-    this.setState({ showInfo: true, element: elements[num] });
-  };
+  showInfo = num => {
+    this.setState({ showInfo: true, element: elements[num] })
+  }
 
   closeInfo = () => {
-    this.setState({ showInfo: false });
-  };
+    this.setState({ showInfo: false })
+  }
 
   /**
    * Helper method that will generate a number of elements
@@ -43,12 +43,12 @@ class App extends Component {
    * @return {Array<Object>}
    */
   populateElements = (start, end) => {
-    let items = [];
+    let items = []
     for (let i = start; i <= end; i++) {
-      items.push(<Element showInfo={this.showInfo} num={i} />);
+      items.push(<Element showInfo={this.showInfo} num={i} />)
     }
-    return items;
-  };
+    return items
+  }
 
   render() {
     let {
@@ -63,8 +63,8 @@ class App extends Component {
       molar_heat,
       density,
       melt,
-      boil,
-    } = this.state.element;
+      boil
+    } = this.state.element
 
     return (
       <div className="wrapper">
@@ -125,13 +125,9 @@ class App extends Component {
         </div>
         <footer className="footer center">
           <span>
-            2021, Put together by{" "}
-            <a
-              href="https://tamalweb.com/periodic-table-reactjs"
-              target="_blank"
-              rel="noopener"
-            >
-              Tamal Web
+            2022, Put together by{" "}
+            <a href="https://tamalchowdhury.com" target="_blank" rel="noopener">
+              Tamal Chowdhury
             </a>
           </span>
           <GitHubButton
@@ -144,8 +140,8 @@ class App extends Component {
           </GitHubButton>
         </footer>
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App

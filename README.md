@@ -1,10 +1,36 @@
 # The Periodic Table of Elements
 
-Made with CSS Grid, React and Science!
+Made with CSS Grid, React and Science! [See it in Action: PeriodicTable.website](https://periodictable.website)
 
-[See it in Action!](https://periodictable.website)
+## Running it on your computer
 
-[Blog Post: How I made The Periodic Table with CSS Grid and React](https://tamalweb.com/periodic-table-reactjs)
+You will need Node.js installed on your computer. To setup a local development environment with Node and Git bash [Follow this tutorial](https://tamalweb.com/setup-local-dev-environment)
+
+### Clone the repository into your computer
+
+```sh
+git clone https://github.com/tamalchowdhury/periodic-table.git
+```
+
+Go into the new directory:
+
+```sh
+cd periodic-table
+```
+
+Install the dependencies with `yarn` or `npm`
+
+```sh
+yarn
+```
+
+Run the app locally by running `yarn start` or `npm start`
+
+```sh
+yarn start
+```
+
+Visit http://localhost:3000
 
 ![Periodic Table](./screenshot.jpg)
 
@@ -24,4 +50,4 @@ After I arranged the elements the way it is, I then transitioned over React.
 
 React allowed me to make the items interactive. I found [a handy JSON](https://github.com/Bowserinator/Periodic-Table-JSON) that had all the element info which I used to dynamically populate the symbol names and other information. This saved me a lot of time and error making this table.
 
-Would like to talk more about this project? Get in touch!
+You can read the detailed blog Post here: [How I made The Periodic Table with CSS Grid and React](https://tamalweb.com/periodic-table-reactjs)
