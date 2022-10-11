@@ -4,7 +4,7 @@ Made with CSS Grid, React and Science! [See it in Action: PeriodicTable.website]
 
 ## Running it on your computer
 
-You will need Node.js installed on your computer. To setup a local development environment with Node and Git bash [Follow this tutorial](https://tamalweb.com/setup-local-dev-environment)
+You will need Node.js installed on your computer. Follow this tutorial to [setup a local development environment with Node and Git bash](https://tamalweb.com/setup-local-dev-environment)
 
 ### Clone the repository into your computer
 
