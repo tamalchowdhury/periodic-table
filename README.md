@@ -1,6 +1,6 @@
 # The Periodic Table of Elements
 
-Made with CSS Grid, React and Science! [See it in Action: PeriodicTable.website](https://periodictable.website)
+Made with CSS Grid, React and Science! [See it in Action: PeriodicTable.website](https://periodictableonline.netlify.app/)
 
 ## Running it on your computer
 
