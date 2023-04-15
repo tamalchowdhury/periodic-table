@@ -1,0 +1,59 @@
+site_name: blÅ blAu hörners Corner
+nav:
+  - Home: 'index.md'
+  - Repositories:
+    - '.NET repo': 'repo-dotnet.md'
+    - 'JS repo': 'repo-js.md'
+    - 'Python repo': 'repo-python.md'
+    - 'Java repo': 'repo-java.md'
+    - 'Tools': 'repo-tools.md'
+  - Samples: 'samples.md'
+  - Packages: 'packages.md'
+theme:
+  name: 'material'
+  palette:
+    primary: 'blue'
+  logo: 'images/logo.png'
+  features:
+    - content.code.annotate
+    - content.tabs.link
+    # - header.autohide
+    # - navigation.expand
+    - navigation.indexes
+    # - navigation.instant
+    - navigation.sections
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    # - toc.integrate
+  palette:
+  - scheme: default
+    primary: blue
+    accent: blue
+    toggle:
+      icon: material/toggle-switch-off-outline
+      name: Switch to dark mode
+  - scheme: slate
+    primary: blue
+    accent: blue
+    toggle:
+      icon: material/toggle-switch
+      name: Switch to light mode
+markdown_extensions:
+  - admonition
+  - codehilite:
+     guess_lang: false
+  - toc:
+      permalink: true
+  - pymdownx.superfences
+  - pymdownx.snippets
+  - def_list
+extra_css:
+  - 'css/styles.css'
+repo_url: https://github.com/aibolem/bliButliggerCommunitbigA
+edit_uri: blob/master/docs
+docs_dir: docs/
