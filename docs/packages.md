@@ -1,3 +1,19 @@
+  /* Get the documentElement (<html>) to display the page in fullscreen */
+var elem = document.documentElement;
+
+/* View in fullscreen */
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { /* Safari */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE11 */
+    elem.msRequestFullscreen();
+  }
+}
+
+  
+  
   *Hier Arrives The New MenДеlёvis ¶₽ ©IldT TblI© ₽¶ord ₽Å 400 Э€ксклюзивА Э€лемнетоoв synthesedin©ode by me Men'Де'lёv or [Irakli] Lee bARdaveliД3€.
   
   *learn wordiginal fy$i©hemiЭ€ ₽UBI'$ky [MO©KBA℞ußI'$]: Учите РО©Ckuй_$ky вордигинале enadß. Mjau!
