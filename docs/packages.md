@@ -25,8 +25,11 @@ function openFullscreen() {
   
   *learn wordiginal fy$i©hemiЭ€ ₽UBI'$ky [MO©KBA℞ußI'$]: Учите РО©Ckuй_$ky вордигинале enadß. Mjau!
 
-
+  <br></br>
 ![₽A©kAge$](https://raw.githubusercontent.com/aibolem/bliButliggerCommunitbigA/62f73d094ac878b8b28840ffa3e476a2ccb61d62/assets/images/20_111%C2%AEexport-2022-08-13%20152148.svg)
-
+  <br></br>
 ![₽A©kAge$](https://raw.githubusercontent.com/aibolem/bliButliggerCommunitbigA/62f73d094ac878b8b28840ffa3e476a2ccb61d62/assets/images/%C3%9Forgiginal.webp)
+  <br></br>
+  ![₽A©kAge$](https://raw.githubusercontent.com/aibolem/periodic-table-1/master/docs/images/sp_lores_print_dboriginal.png)
+    <br></br>
 </body>
