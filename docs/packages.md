@@ -23,7 +23,12 @@ function openFullscreen() {
   
   *Hier Arrives The New MenДеlёvis ¶₽ ©IldT TblI© ₽¶ord ₽Å 400 Э€ксклюзивА Э€лемнетоoв synthesedin©ode by me Men'Де'lёv or [Irakli] Lee bARdaveliД3€.
   
-  *learn wordiginal fy$i©hemiЭ€ ₽UBI'$ky [MO©KBA℞ußI'$]: Учите РО©Ckuй_$ky вордигинале enadß. Mjau!
+  *learn wordiginal dialect of "russky" = "₽_RußuI©$ky" fy$i©hemiЭ€ ₽UBI'$ky [MO©KBA℞ußI'$]: Учите РО©Ckuй_$ky вордигинале enadß. Mjau!
+  
+  ₽omAhov / ₽©TANOf / people say ROMANOFF, byt I remember eve₽y_$ing well, like a e_BernaVAKEd to Tbili©i ... sien©e 1932, my grand ₽ARÄN_TS ©reate over there Brolikbili©A®, BV© MV© ...
+  
+  $₽€©iAl thanks to my naTE$LAwebßi©, ©ollAssni©AR, bA℞©Å$iN@₽ = Love you all weibli©hen ... grüsse©h! 
+  
 
   <br></br>
 ![₽A©kAge$](https://raw.githubusercontent.com/aibolem/bliButliggerCommunitbigA/62f73d094ac878b8b28840ffa3e476a2ccb61d62/assets/images/20_111%C2%AEexport-2022-08-13%20152148.svg)
