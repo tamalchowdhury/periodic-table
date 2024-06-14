@@ -2,6 +2,7 @@ import { useState } from "react"
 import Element from "./Element"
 import "./styles/main.css"
 import { data } from "./lib/data"
+import GitHubButton from "react-github-btn"
 
 export default function App() {
   const [showInfo, setShowInfo] = useState(false)
@@ -104,7 +105,14 @@ export default function App() {
               Tamal Chowdhury
             </a>
           </span>
-          GitHub Button
+          <GitHubButton
+            href='https://github.com/tamalchowdhury/periodic-table'
+            data-color-scheme='no-preference: light; light: light; dark: dark;'
+            data-show-count='true'
+            aria-label='Star tamalchowdhury/periodic-table on GitHub'
+          >
+            Star
+          </GitHubButton>
         </footer>
       </div>
     </>
