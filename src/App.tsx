@@ -1,10 +1,11 @@
 import Element from "./Element"
+import "./styles/main.css"
 
 export default function App() {
   return (
     <>
       hello
-      <Element num={1} showInfo={() => {}} />
+      <Element num={5} showInfo={() => {}} />
     </>
   )
 }
