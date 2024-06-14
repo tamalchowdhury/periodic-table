@@ -1,23 +1,25 @@
 import { useState } from "react"
 import Element from "./Element"
 import "./styles/main.css"
+import { data } from "./lib/data"
 
 export default function App() {
   const [showInfo, setShowInfo] = useState(false)
   const [element, setElement] = useState({})
 
-  const handleshowInfo = (num) => {
-    this.setState({ showInfo: true, element: elements[num] })
+  const handleshowInfo = (num: number) => {
+    setShowInfo(true)
+    setElement(data[num])
   }
 
   const handlecloseInfo = () => {
-    this.setState({ showInfo: false })
+    setShowInfo(false)
   }
 
-  const populateElements = (start, end) => {
+  const populateElements = (start: number, end: number) => {
     let items = []
     for (let i = start; i <= end; i++) {
-      items.push(<Element showInfo={showInfo} num={i} />)
+      items.push(<Element showInfo={handleshowInfo} num={i} />)
     }
     return items
   }
