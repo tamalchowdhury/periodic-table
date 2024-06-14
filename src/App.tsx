@@ -6,7 +6,7 @@ import GitHubButton from "react-github-btn"
 
 export default function App() {
   const [showInfo, setShowInfo] = useState(false)
-  const [element, setElement] = useState({})
+  const [element, setElement] = useState(data[1])
 
   const handleshowInfo = (num: number) => {
     setShowInfo(true)
