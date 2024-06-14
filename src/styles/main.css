@@ -1,0 +1,272 @@
+/*
+Copyright 2021 Tamal Anwar Chowdhury
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    https://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+*/
+
+@import "_normalize.css";
+
+html {
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.center {
+  text-align: center;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 2vw;
+  max-width: 1700px;
+}
+
+#table {
+  display: grid;
+  grid-template-columns: repeat(17, auto) 1fr;
+}
+
+.site-title {
+  font-size: 1rem;
+}
+
+/* Every element box  */
+.element {
+  cursor: pointer;
+  width: 5vw;
+  height: 5vw;
+  padding: 2px;
+  /* border: 1px solid #333; */
+  border-collapse: collapse;
+  overflow: hidden;
+}
+
+.number {
+  float: left;
+  font-size: 0.5vw;
+  position: absolute;
+}
+
+.symbol {
+  font-weight: bold;
+  text-align: center;
+  margin-top: 0.5vw;
+  font-size: 2.5vw;
+}
+
+.element-name {
+  font-size: 0.8vw;
+  text-align: center;
+}
+
+#element-box .symbol {
+  font-size: 5vw;
+}
+
+#element-box .number {
+  font-size: 1vw;
+}
+
+#element-box .element-name {
+  font-size: 1.5vw;
+}
+
+#element-box {
+  grid-column: 3/5;
+  grid-row: 2/4;
+  margin: 0;
+  padding: 0.2vw;
+  overflow: hidden;
+}
+
+/* Information Table  */
+#information {
+  grid-column: 5/13;
+  grid-row: 2/4;
+  padding: 0.5vw;
+  padding-top: 0;
+  font-size: 1vw;
+  max-height: 10vw;
+  overflow-y: scroll;
+}
+
+#information h1 {
+  margin: 0 0 0.5vw 0;
+}
+
+.big_title {
+  display: inline-block;
+}
+
+.cat_name {
+  border-radius: 3px;
+  padding: 0 5px;
+  margin-left: 5px;
+  top: -0.7vw;
+  position: relative;
+}
+
+.close-button {
+  float: right;
+  cursor: pointer;
+  color: #ccc;
+}
+
+.close-button:hover {
+  color: #333;
+}
+
+.appearance {
+  margin-bottom: 0.5vw;
+}
+
+.atom_info {
+  margin-bottom: 0.5vw;
+  color: #998100;
+}
+
+/* Helium to the top right  */
+.element-2 {
+  grid-column-start: -2;
+}
+
+/* Boron & Alumunium to the right  */
+.element-5,
+.element-13 {
+  grid-column-start: 13;
+}
+
+/* Lanthinide & Actinoid split  */
+.element-58,
+.element-90 {
+  grid-column-start: 3;
+}
+
+/* I DID NOT KNOW THERE WAS 119th ONE! */
+
+.element-119 {
+  grid-column-start: -2;
+}
+
+/* Categories and Groups */
+
+/* Noble Gas  */
+.noble {
+  background: #f3d2e8;
+  background: linear-gradient(60deg, #f3d2e8, #e40c9c);
+}
+
+/* Alkali Metal  */
+.alkali {
+  background: #f88379;
+  background: linear-gradient(60deg, #e9b2ad, #f11b07);
+}
+
+/* Alkaline Earth Metal  */
+.alkaline {
+  background: #ffc3a0;
+  background: linear-gradient(60deg, #ffc3a0, #eb5d0b);
+}
+
+/* Transition Metal  */
+.transition {
+  background: #e9ff08;
+  background: linear-gradient(60deg, #e9ff08, #e2b00a);
+}
+
+/* Polyatomic Non Metal  */
+.polyatomic {
+  background: #a3d2d5;
+  background: linear-gradient(60deg, #a3d2d5, #148088);
+}
+
+/* Diatomic Non Metal  */
+.diatomic {
+  background: #a3d5bf;
+  background: linear-gradient(60deg, #a3d5bf, #39a576);
+}
+
+/* Post Transition Metal  */
+.post-transition {
+  background: #8eb1e7;
+  background: linear-gradient(60deg, #8eb1e7, #0960e4);
+}
+
+/* Metalloid  */
+.metalloid {
+  background: #5ed89c;
+  background: linear-gradient(90deg, #5ed89c, #15864e);
+}
+
+/* Lanthanide  */
+.lanthanide {
+  background: #c9f;
+  background: linear-gradient(90deg, #c9f, rgb(108, 13, 202));
+  /* Put a space to seperate the split table  */
+  margin-top: 2.5vw;
+}
+
+/* Actinide  */
+.actinide {
+  background: #ad87bd;
+  background: linear-gradient(90deg, #ad87bd, #ad1deb);
+}
+
+/* The Unknown Element  */
+.unknown {
+  background: #cff;
+  background: linear-gradient(90deg, #cff, rgb(13, 173, 173));
+}
+
+/* Disable the top space for the first lathenide which sits inside the table  */
+.element-57 {
+  margin: 0;
+}
+
+/* When in the hover state  */
+.active {
+  /* background: #fff; */
+  background: #000;
+  color: #fff;
+  /* border-color: yellow; */
+}
+
+.footer {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+@media (max-width: 375px) {
+  .wrapper {
+    width: 100%;
+  }
+
+  .element {
+    border: 0;
+    width: 7vw;
+    height: 7vw;
+  }
+}

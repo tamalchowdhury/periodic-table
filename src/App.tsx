@@ -1,5 +1,10 @@
-function App() {
-  return <>hello</>
-}
+import Element from "./Element"
 
-export default App
+export default function App() {
+  return (
+    <>
+      hello
+      <Element num={1} showInfo={() => {}} />
+    </>
+  )
+}
