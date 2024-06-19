@@ -42,6 +42,11 @@ export default function App() {
 
   return (
     <>
+      <header className='header'>
+        <div className='wrap'>
+          <h1>The Periodic Table</h1>
+        </div>
+      </header>
       <div className='wrapper'>
         <div id='table'>
           {/* Elements 1-4 */}
