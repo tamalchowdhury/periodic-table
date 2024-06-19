@@ -608,7 +608,7 @@ body {
 }
 
 /* When in the hover state  */
-.active {
+.element:hover {
   /* background: #fff; */
   background: #000;
   color: #fff;
