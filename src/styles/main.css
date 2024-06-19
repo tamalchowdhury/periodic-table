@@ -470,7 +470,7 @@ body {
   grid-column: 5/13;
   grid-row: 2/4;
   padding: 0.5vw;
-  padding-top: 0;
+  padding-top: 20px;
   font-size: 1vw;
   max-height: 10vw;
   overflow-y: scroll;
@@ -639,4 +639,27 @@ body {
     width: 7vw;
     height: 7vw;
   }
+}
+
+/* change the scrollbar styles */
+
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: linear-gradient(to bottom, #cff, rgb(13, 173, 173));
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(60deg, #f3d2e8, #e40c9c);
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(90deg, #c9f, rgb(108, 13, 202));
 }
