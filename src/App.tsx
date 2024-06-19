@@ -18,7 +18,7 @@ export default function App() {
   }
 
   const populateElements = (start: number, end: number) => {
-    let items = []
+    const items = []
     for (let i = start; i <= end; i++) {
       items.push(<Element showInfo={handleshowInfo} num={i} key={i} />)
     }
