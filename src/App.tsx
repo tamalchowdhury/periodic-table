@@ -3,6 +3,8 @@ import Element from "./Element"
 import "./styles/main.css"
 import { data } from "./lib/data"
 import GitHubButton from "react-github-btn"
+import Footer from "./components/Footer"
+import Header from "./components/Header"
 
 export default function App() {
   const [showInfo, setShowInfo] = useState(false)
@@ -42,11 +44,7 @@ export default function App() {
 
   return (
     <>
-      <header className='header'>
-        <div className='wrap'>
-          <h1>The Periodic Table</h1>
-        </div>
-      </header>
+      <Header />
       <div className='wrapper'>
         <div id='table'>
           {/* Elements 1-4 */}
@@ -103,22 +101,7 @@ export default function App() {
           {/* Actionoids 90-103 */}
           {populateElements(90, 103)}
         </div>
-        <footer className='footer center'>
-          <span>
-            2024, Put together by{" "}
-            <a href='https://blogkori.com' target='_blank' rel='noopener'>
-              Tamal Chowdhury
-            </a>
-          </span>
-          <GitHubButton
-            href='https://github.com/tamalchowdhury/periodic-table'
-            data-color-scheme='no-preference: light; light: light; dark: dark;'
-            data-show-count='true'
-            aria-label='Star tamalchowdhury/periodic-table on GitHub'
-          >
-            Star
-          </GitHubButton>
-        </footer>
+        <Footer />
       </div>
     </>
   )
