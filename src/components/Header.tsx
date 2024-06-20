@@ -1,4 +1,5 @@
 import { SITE_TITLE } from "../lib/consts"
+import GithubLink from "./GithubLink"
 
 export default function Header() {
   return (
@@ -7,7 +8,9 @@ export default function Header() {
         <h1>
           <a href='/'>{SITE_TITLE}</a>
         </h1>
-        <span>⚛</span>
+        <span>
+          <GithubLink />
+        </span>
         <span>
           <a
             style={{ textDecoration: "underline" }}
@@ -17,6 +20,7 @@ export default function Header() {
             How I Built it?
           </a>
         </span>
+        
       </div>
     </header>
   )

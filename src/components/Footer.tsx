@@ -15,14 +15,6 @@ export default function Footer() {
             {AUTHOR_NAME}
           </a>
         </span>
-        <GitHubButton
-          href={GITHUB_REPO}
-          data-color-scheme='no-preference: light; light: light; dark: dark;'
-          data-show-count='true'
-          aria-label='Star Periodic Table Project on GitHub'
-        >
-          Star
-        </GitHubButton>
       </footer>
     </>
   )
