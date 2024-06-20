@@ -406,6 +406,35 @@ body {
   column-gap: 10px;
 }
 
+.header__logo {
+  font-weight: bold;
+}
+
+.header__text {
+  color: rgba(255, 255, 255, 0.7);
+  transition: all 0.3s;
+  font-size: 14px;
+}
+
+.header__text:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.header__text a {
+  text-decoration: none;
+}
+
+.header__text a:hover {
+  text-decoration: underline;
+}
+
+.u-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
 .wrapper {
   width: 90%;
   margin: 0 auto;
