@@ -2,7 +2,6 @@ import { useState } from "react"
 import Element from "./Element"
 import "./styles/main.css"
 import { data } from "./lib/data"
-import Footer from "./components/Footer"
 import Header from "./components/Header"
 import InfoBox from "./components/InfoBox"
 
@@ -49,7 +48,6 @@ export default function App() {
           {/* Actionoids 90-103 */}
           {populateElements(90, 103)}
         </div>
-        <Footer />
       </div>
     </>
   )
