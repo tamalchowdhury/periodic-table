@@ -400,6 +400,12 @@ body {
   color: #fff;
 }
 
+.header__wrap {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
 .wrapper {
   width: 90%;
   margin: 0 auto;

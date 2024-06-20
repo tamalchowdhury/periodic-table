@@ -7,7 +7,11 @@ export default function Footer() {
       <footer className='footer center'>
         <span>
           2024, Put together by{" "}
-          <a href={AUTHOR_SITE} target='_blank' rel='noopener'>
+          <a
+            href='https://www.blogkori.com/periodic-table-react'
+            target='_blank'
+            rel='noopener'
+          >
             {AUTHOR_NAME}
           </a>
         </span>
