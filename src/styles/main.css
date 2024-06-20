@@ -437,8 +437,7 @@ body {
 
 .wrapper {
   width: 90%;
-  margin: 0 auto;
-  margin-top: 2vw;
+  margin: 2vw auto;
   max-width: 1700px;
 }
 
